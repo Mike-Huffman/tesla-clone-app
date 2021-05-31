@@ -1,8 +1,6 @@
-# Tesla.com UI Clone [awesome-badge]
+# Tesla.com UI Clone ![image](https://user-images.githubusercontent.com/28201707/120180241-5fcbb780-c1c0-11eb-9e1a-724af50cce2e.png)
 
 
-## Made using React/Redux [react-badge]
 
-[awesome-badge]: https://cdn.rawgit.com/sindresorhus/awesome/d7305f38d29fed78fa85652e3a63e154dd8e8829/media/badge.svg
-[react-badge]: https://badges.aleen42.com/src/react.svg
-[tesla-badge]: https://badges.aleen42.com/src/tesla.svg
+## Made using React/Redux ![image](https://user-images.githubusercontent.com/28201707/120180155-49bdf700-c1c0-11eb-858d-f1e0ac3483f2.png)
+
