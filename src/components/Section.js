@@ -24,7 +24,6 @@ const Container = styled.div`
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: blue;
     width: 100%;
     height: 100vh;
     background-image: ${props => `url('/images/${props.bgImage}')`};
@@ -47,18 +46,23 @@ const ButtonGroup = styled.div`
 
 const LeftButton = styled.div`
     background-color: rgba(23, 26, 32, 0.8);
-    height: 40px;
-    width: 256px;
+    height: 20px;
+    width: 128px;
     border-radius: 100px;
     color: white;
     display: flex;
     justify-content: center;
     align-items: center;
     text-transform: uppercase;
-    font-size: 12px;
+    font-size: 8px;
     opacity: 0.85;
     margin: 8px;
     cursor: pointer;
+    @media (min-width: 900px) {
+        height: 40px;
+        width: 256px;
+        font-size: 12px;
+    }
 `
 
 const RightButton = styled(LeftButton)`

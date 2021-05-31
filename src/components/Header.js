@@ -13,10 +13,10 @@ function Header() {
 
             </a>
             <MenuGroup>
-                <div>Car 1</div>
-                <div>Car 2</div>
-                <div>Car 3</div>
-                <div>Car 4</div>
+                <div>Model S</div>
+                <div>Model 3</div>
+                <div>Model X</div>
+                <div>Model Y</div>
             </MenuGroup>
             <RightMenu>
                 <a href="#">Shop</a>
@@ -29,15 +29,13 @@ function Header() {
                 <CloseContainer>
                 <Close onClick={()=>setBurgerStatus(false)}/>
                 </CloseContainer>
-                <li><a href="">Car 1</a></li>
-                <li><a href="">Car 2</a></li>
-                <li><a href="">Car 3</a></li>
-                <li><a href="">Car 4</a></li>
+                <li><a href="">Model S</a></li>
+                <li><a href="">Model 3</a></li>
+                <li><a href="">Model X</a></li>
+                <li><a href="">Model Y</a></li>
                 <li><a href="">More</a></li>
                 <li><a href="">Shop</a></li>
-                <li><a href="">My Account</a></li>
-
-                
+                <li><a href="">My Account</a></li>               
             </BurgerNav>
         </Container>
     )
@@ -68,7 +66,7 @@ const MenuGroup = styled.div`
         cursor: pointer;
     }
  
-    @media (max-width: 768px) {
+    @media (max-width: 900px) {
         display: none;
     }
 
@@ -83,7 +81,7 @@ const RightMenu = styled.div`
         padding-right: 10px;
     }
     
-    @media (max-width: 768px) {
+    @media (max-width: 900px) {
         a {
             display: none;
         }
@@ -95,30 +93,33 @@ const MenuIconContainer = styled.div`
     display: flex;
     align-items: center;
     cursor: pointer;
-    @media (min-width: 768px) {
+    @media (min-width: 900px) {
         display: none;
     }
 `
 
-const CloseContainer = styled.div `
+const CloseContainer = styled.div`
     display: flex;
     justify-content: flex-end;
 `
 
-const Close = styled(CloseIcon) `
+const Close = styled(CloseIcon)`
     cursor: pointer;
 `
 
-const BurgerNav = styled.div `
+const BurgerNav = styled.div`
     position: fixed;
     width: 300px;
-    background: white;
+    background: rgba(255, 255, 255, 0.5);
+    backdrop-filter: blur(5px);
+    box-shadow: inset 0 3px 6px rgba(0,0,0,0.16), 0 8px 12px rgba(0,0,0,0.45);
+    border-radius: 20px 0px 0px 20px;
     top: 0;
     right: 0;
     bottom: 0;
     padding: 20px;
     list-style: none;
-    transform: ${props => props.status ? 'translateX(0)' : 'translateX(100%)'};
+    transform: ${props => props.status ? 'translateX(0%)' : 'translateX(100%)'};
     transition: transform 0.2s ease-in;
     li {
         padding: 15px 0;
